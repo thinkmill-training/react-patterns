@@ -14,6 +14,8 @@
   - Context API (allows to access the props beyond first-level children)
   - Do we have a set of _decision-making rules_ for that?
 
+  ***
+
 - [ ] Would we ever bother using the JSX _dot notation_ for compound components? As in:
 
 ```JSX
