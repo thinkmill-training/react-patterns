@@ -1,6 +1,6 @@
 ## Compound components
 
-```
+```JSX
 <ButtonGroup>
   <Button>First</Button>
   <Button>Second</Button>
@@ -16,7 +16,7 @@
 
 - [ ] Would we ever bother using the JSX _dot notation_ for compound components? As in:
 
-```
+```JSX
 <Panel>
   <Panel.Title>Well, hi!</Panel.Title>
   <Panel.Body>
