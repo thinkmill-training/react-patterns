@@ -8,6 +8,7 @@ Common patterns you can employ when build react applications
 - [Controlled vs uncontrolled form fields](/patterns/controlled-vs-uncontrolled/README.md)
 - [Design tokens](/patterns/design-tokens/README.md)
 - [Forms](/patterns/forms/README.md)
+- [Optimistic UI](/patterns/optimistic-ui/README.md)
 - [Props API design](/patterns/props-api-design/README.md)
 - [State management](/patterns/state-management/README.md)
 - [Styling](/patterns/styling/README.md)
