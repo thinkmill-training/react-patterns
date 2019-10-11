@@ -2,6 +2,7 @@
 
 Common patterns you can employ when build react applications
 
+- [Animations](/patterns/animations/README.md)
 - [Composition patterns](/patterns/composition-patterns/README.md)
 - [Compound components](/patterns/compound-components/README.md)
 - [Controlled vs uncontrolled form fields](/patterns/controlled-vs-uncontrolled/README.md)
