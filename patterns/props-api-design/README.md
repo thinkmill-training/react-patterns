@@ -31,7 +31,7 @@ Allow both `$React.Node` children and render functions to pass on relevant helpe
   Some Content
 </Popover>
 // implementation
-return typeof target === 'function' ? target(state) : target
+let resolvedTarget = typeof target === 'function' ? target(state) : target
 ```
 
 ### Data VS Composition
