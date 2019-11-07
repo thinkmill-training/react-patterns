@@ -27,9 +27,11 @@ Allow both `$React.Node` children and render functions to pass on relevant helpe
   Some Content
 </Popover>
 // OR
-<Popover target={isOpen => <Button selected={isOpen}>Target</Button>}>
+<Popover target={({ isOpen }) => <Button selected={isOpen}>Target</Button>}>
   Some Content
 </Popover>
+// implementation
+return typeof target === 'function' ? target(state) : target
 ```
 
 ### Data VS Composition
