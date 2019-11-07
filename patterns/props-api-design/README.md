@@ -15,9 +15,21 @@ Consider using dynamic types to minimize discrete props e.g.
 ```jsx
 <Dialog width={[100, 300]} />
 <Dialog width={240} />
-// VS
+// instead of
 <Dialog minWidth={100} maxWidth={300} />
 <Dialog width={240} />
+```
+
+Allow both `$React.Node` children and render functions to pass on relevant helpers e.g.
+
+```jsx
+<Popover target={<Button>Target</Button>}>
+  Some Content
+</Popover>
+// OR
+<Popover target={isOpen => <Button selected={isOpen}>Target</Button>}>
+  Some Content
+</Popover>
 ```
 
 ### Data VS Composition
@@ -45,10 +57,20 @@ Take advantage of React's `isValidElement` helper.
 ```jsx
 <Header title="Page One" />
 <Header title={<Avatar src="/path/to/image.jpg" name="User Name" />} />
-
 // implementation
-
 let resolvedTitle = React.isValidElement(title) ? title : <Title>{title}</Title>
+```
+
+### Children Enhancement
+
+Take advantage of React's `Children` helpers. One usage could be to avoid trumping consumer styles e.g.
+
+```jsx
+Children.map(props.children, child => (
+  <div style={{ margin: 20 }}>
+    {child}
+  </div>
+))
 ```
 
 ### Code Simplification
